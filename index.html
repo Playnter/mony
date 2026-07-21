@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romantic Fridge Particle Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@700;800&family=Cairo:wght@400;500;700;900&family=Cormorant+Garamond:wght@600;700&family=Noto+Kufi+Arabic:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <div class="input-container">
+      <div class="input-wrapper">
+        <div class="status-copy sr-only" aria-live="polite">
+          <strong id="status-text">جاهز للبداية</strong>
+          <span id="progress-text">اضغط على الثلاجة من منتصف الشاشة.</span>
+        </div>
+        <button id="restart-button" type="button">
+          <span class="button-content">
+            <span>إعادة</span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <section id="message-overlay" class="message-overlay" aria-hidden="true">
+      <div class="message-backdrop"></div>
+      <article class="message-card">
+        <button id="close-message" class="message-card__close" type="button" aria-label="إغلاق">
+          ×
+        </button>
+        <p id="message-body"></p>
+      </article>
+    </section>
+
+    <section id="finale-overlay" class="finale-overlay" aria-hidden="true">
+      <div class="heart-rain" id="heart-rain"></div>
+      <article class="finale-card">
+        <div class="finale-heart">❤</div>
+        <h2>مش هتحني بقي ؟🙂</h2>
+        <div class="finale-actions">
+          <button id="final-accept" type="button">
+            <span class="button-content">
+              <span>موافقه</span>
+            </span>
+          </button>
+          <button id="final-yes" type="button">
+            <span class="button-content">
+              <span>نعم</span>
+            </span>
+          </button>
+        </div>
+      </article>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
