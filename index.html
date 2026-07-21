@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romantic Fridge Particle Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@700;800&family=Cairo:wght@400;500;700;900&family=Cormorant+Garamond:wght@600;700&family=Noto+Kufi+Arabic:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <section id="gate-overlay" class="gate-overlay" aria-hidden="false">
+      <div class="gate-card">
+        <input id="gate-input" class="gate-input" type="password" inputmode="text" autocomplete="off" spellcheck="false" aria-label="رمز الدخول">
+      </div>
+    </section>
+
+    <div class="input-container">
+      <div class="input-wrapper">
+        <div class="status-copy sr-only" aria-live="polite">
+          <strong id="status-text">جاهز للبداية</strong>
+          <span id="progress-text">اضغط على الثلاجة من منتصف الشاشة.</span>
+        </div>
+        <button id="restart-button" type="button">
+          <span class="button-content">
+            <span>إعادة</span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <section id="message-overlay" class="message-overlay" aria-hidden="true">
+      <div class="message-backdrop"></div>
+      <article class="message-card">
+        <button id="close-message" class="message-card__close" type="button" aria-label="إغلاق">
+          ×
+        </button>
+        <p id="message-body"></p>
+      </article>
+    </section>
+
+    <section id="finale-overlay" class="finale-overlay" aria-hidden="true">
+      <div class="heart-rain" id="heart-rain"></div>
+      <article class="finale-card">
+        <p class="finale-poem">
+          اِعلَمي يا أَحَبَّ شَيءٍ إلَيّا<br>
+          أَنَّ شَوقي إِلَيكِ قاضٍ عَلَيّا<br>
+          إِن قَضى اللَهُ لي إِلَيكِ رُجوعًا<br>
+          لا ذَكَرتُ الفِراقَ ما دُمتُ حَيّا<br>
+          إِنَّ حَرَّ الفِراقِ أَنحَلَ جِسمي<br>
+          وَكَوى القَلبَ مِنكِ بِالشَوقِ كَيّا
+        </p>
+      </article>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
